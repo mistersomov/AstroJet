@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bottom_app_bar_menu_home">Home</string>
+    <string name="bottom_app_bar_menu_trading">Trading</string>
+    <string name="bottom_app_bar_menu_settings">Settings</string>
+</resources>

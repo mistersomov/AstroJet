@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider"
+                android:layout_width="141dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/crypto_ticker" />
+
+            <ImageView
+                android:id="@+id/crypto_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/crypto_ticker"
+                style="@style/PrimaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="13dp"
+                android:text="BTC"
+                app:layout_constraintStart_toEndOf="@+id/crypto_icon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/crypto_fullName"
+                style="@style/SecondaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="BITCOIN"
+                app:layout_constraintStart_toStartOf="@+id/crypto_ticker"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:id="@+id/trend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/crypto_currency"
+                app:layout_constraintEnd_toStartOf="@+id/crypto_currency"
+                app:layout_constraintTop_toTopOf="@+id/crypto_currency"
+                app:srcCompat="@drawable/ic_triangle_up" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/crypto_currency"
+                style="@style/PrimaryText.Currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="123123"
+                app:layout_constraintBottom_toBottomOf="@+id/crypto_ticker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/crypto_ticker" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/crypto_lastUpdate"
+                style="@style/SecondaryText.LastUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/crypto_last_update"
+                app:layout_constraintBottom_toBottomOf="@id/crypto_fullName"
+                app:layout_constraintEnd_toEndOf="@+id/crypto_currency"
+                app:layout_constraintTop_toTopOf="@+id/crypto_fullName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

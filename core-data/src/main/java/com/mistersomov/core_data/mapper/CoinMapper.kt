@@ -5,10 +5,6 @@ import com.mistersomov.core_data.database.CoinInfoDbModel
 import com.mistersomov.core_data.network.model.crypto.CoinInfoDto
 import com.mistersomov.core_data.network.model.crypto.CoinInfoJsonContainerDto
 import com.mistersomov.core_data.network.model.crypto.CoinListDto
-import java.sql.Date
-import java.sql.Timestamp
-import java.text.SimpleDateFormat
-import java.util.*
 import javax.inject.Inject
 
 class CoinMapper @Inject constructor() : ICoinMapper {
@@ -79,6 +75,7 @@ class CoinMapper @Inject constructor() : ICoinMapper {
     override fun mapCoinListDtoToString(coinListDto: CoinListDto): String {
         return coinListDto.names?.map { it.coinName?.name }?.joinToString(",") ?: ""
     }
+
 
     companion object {
         private const val BASE_IMAGE_URL = "https://www.cryptocompare.com"

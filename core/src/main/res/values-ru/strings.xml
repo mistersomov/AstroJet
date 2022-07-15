@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bottom_app_bar_menu_home">Домой</string>
+    <string name="bottom_app_bar_menu_trading">Трейдинг</string>
+    <string name="bottom_app_bar_menu_settings">Настройки</string>
+</resources>
