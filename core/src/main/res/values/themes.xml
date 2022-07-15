@@ -13,7 +13,10 @@
         <item name="colorSurface">@color/surface</item>
         <item name="colorOnSurface">@color/onSurface</item>
         <item name="backgroundColor">@color/background</item>
+        <item name="colorSurfaceVariant">@color/surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/onSurfaceVariant</item>
 
+        <item name="fontFamily">@font/lato_regular</item>
 
     </style>
 </resources>

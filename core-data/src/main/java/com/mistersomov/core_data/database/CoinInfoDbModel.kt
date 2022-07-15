@@ -45,5 +45,5 @@ data class CoinInfoDbModel(
     val totalvolume24hto: Double? = null,
     val totaltoptiervolume24h: Double? = null,
     val totaltoptiervolume24hto: Double? = null,
-    val imageUrl: String
+    val imageUrl: String,
 )
