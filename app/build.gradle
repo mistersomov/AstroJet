@@ -54,8 +54,8 @@ android {
 
 dependencies {
     //project
-//    implementation project(":core")
-//    implementation project(":core-data")
+    implementation project(":core")
+    implementation project(":core-data")
 //    implementation project(":feature-crypto")
 
     implementation 'androidx.appcompat:appcompat:1.4.2'
