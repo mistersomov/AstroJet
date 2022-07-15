@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "AstroJet"
 include ':app'
 include ':core'
+include ':core-data'
