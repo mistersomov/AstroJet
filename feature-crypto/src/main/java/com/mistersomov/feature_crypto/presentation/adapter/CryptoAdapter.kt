@@ -20,7 +20,7 @@ import com.squareup.picasso.Picasso
 class CryptoAdapter : ListAdapter<CoinInfoEntity, CryptoViewHolder>(CryptoItemCallback()) {
 
     var onCryptoItemClick: ((CoinInfoEntity) -> Unit)? = null
-
+  
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CryptoViewHolder {
         val layout =
             if (viewType == VIEW_TYPE_ENABLED) R.layout.crypto_item else throw RuntimeException("Invalid viewtype")
