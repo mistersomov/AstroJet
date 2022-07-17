@@ -58,7 +58,6 @@ class CryptoFragment : BaseFragment(), CryptoView {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupToolbar(view)
         setupRecyclerView()
     }
 
@@ -68,12 +67,6 @@ class CryptoFragment : BaseFragment(), CryptoView {
 
     override fun showProgressBar(isVisible: Boolean) {
         binding.cryptoProgressBar.isVisible = isVisible
-    }
-
-    private fun setupToolbar(view: View) {
-        val toolbar: MaterialToolbar = view.findViewById(R.id.crypto_toolbar)
-        toolbar.title = TOOLBAR_TITLE
-
     }
 
     private fun setupRecyclerView() {

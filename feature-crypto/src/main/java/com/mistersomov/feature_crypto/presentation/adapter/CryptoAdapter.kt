@@ -4,7 +4,6 @@ import android.content.Context
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import androidx.appcompat.content.res.AppCompatResources
@@ -72,7 +71,7 @@ class CryptoAdapter : ListAdapter<CoinInfoEntity, CryptoViewHolder>(CryptoItemCa
                                 trend.apply {
                                     setImageDrawable(drawable)
                                     isVisible = true
-                                    startAnimation(AnimationUtils.loadAnimation(context, R.anim.test))
+                                    startAnimation(AnimationUtils.loadAnimation(context, R.anim.fade_trend_anim))
                                 }
                             }
                         }
