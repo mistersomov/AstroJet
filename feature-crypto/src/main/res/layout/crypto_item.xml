@@ -53,8 +53,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="BITCOIN"
-                app:layout_constraintStart_toStartOf="@+id/crypto_ticker"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/crypto_ticker" />
 
             <ImageView
                 android:id="@+id/trend"
