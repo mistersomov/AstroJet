@@ -162,5 +162,5 @@ data class CoinInfoDto(
 
     @SerializedName("IMAGEURL")
     @Expose
-    val imageUrl: String
+    val imageUrl: String,
 )
