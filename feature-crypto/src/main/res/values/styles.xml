@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PrimaryText">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="PrimaryText.Currency" parent="PrimaryText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SecondaryText">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SecondaryText.LastUpdate" parent="SecondaryText">
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

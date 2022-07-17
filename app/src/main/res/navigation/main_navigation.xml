@@ -2,4 +2,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_navigation" />
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/cryptoFragment">
+    <fragment
+        android:id="@+id/cryptoFragment"
+        android:name="com.mistersomov.feature_crypto.presentation.CryptoFragment"
+        android:label="CryptoFragment" />
+</navigation>

@@ -56,7 +56,7 @@ dependencies {
     //project
     implementation project(":core")
     implementation project(":core-data")
-//    implementation project(":feature-crypto")
+    implementation project(":feature-crypto")
 
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation "com.google.android.material:material:$material_version"
