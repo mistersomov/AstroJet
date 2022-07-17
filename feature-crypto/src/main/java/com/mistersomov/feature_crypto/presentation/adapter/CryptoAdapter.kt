@@ -19,6 +19,8 @@ import com.squareup.picasso.Picasso
 
 class CryptoAdapter : ListAdapter<CoinInfoEntity, CryptoViewHolder>(CryptoItemCallback()) {
 
+    var onCryptoItemClick: ((CoinInfoEntity) -> Unit)? = null
+  
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CryptoViewHolder {
         val layout =
             if (viewType == VIEW_TYPE_ENABLED) R.layout.crypto_item else throw RuntimeException("Invalid viewtype")
@@ -44,6 +46,8 @@ class CryptoAdapter : ListAdapter<CoinInfoEntity, CryptoViewHolder>(CryptoItemCa
         val context: Context = holder.itemView.context
         when (val binding = holder.binding) {
             is CryptoItemBinding -> {
+                holder.itemView.setOnClickListener { onCryptoItemClick?.invoke(cryptoItem) }
+
                 with(binding) {
                     with(cryptoItem) {
                         Picasso.get().load(imageUrl).into(cryptoIcon)
