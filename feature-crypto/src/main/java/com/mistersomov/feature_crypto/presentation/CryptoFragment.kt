@@ -79,8 +79,11 @@ class CryptoFragment : BaseFragment(), CryptoView {
     private fun setupRecyclerView() {
         val recyclerView: RecyclerView = binding.cryptoRecyclerView
         cryptoAdapter = CryptoAdapter()
-        recyclerView.adapter = cryptoAdapter
-        recyclerView.itemAnimator = null
+        recyclerView.apply {
+            adapter = cryptoAdapter
+            itemAnimator = null
+        }
+        cryptoAdapter.onCryptoItemClick = {  }
     }
 
     companion object {
